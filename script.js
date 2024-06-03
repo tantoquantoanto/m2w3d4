@@ -48,7 +48,7 @@ changeAddress();
 
 
 function addLinkClass () {
-    let link = document.getElementsByClassName("link")
+    let link = document.getElementsByClassName("linkimg")
     for(let i = 0; i < link.length; i++) {
     link = link[i].classList.add("link-class")
     } return link
