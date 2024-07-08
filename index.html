@@ -1,72 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Island</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 class="title"> SMART ISLAND </h1>
+    <nav class="container-fluid">
+        <div class="row p-2">
+            <div class="col d-flex align-items-center justify-content-between ">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <img src="./assets/logo.svg" alt="">
+                    <div class="d-none d-md-flex align-items-center justify-content-center gap-3">
+                    <div class="d-flex align-items-center text-center gap-1">
+                        <a>Browse</a>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="d-flex align-items-center text-center gap-1">
+                        <a>Landings</a>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="d-flex align-items-center text-center gap-1">
+                        <a>Pages</a>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="d-flex align-items-center text-center gap-1">
+                        <a>Accounts</a>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                </div>
+                </div>
+                <div class="d-flex gap-2 justify-content-center  align-items-center">
+                    <div id="notify"><ion-icon name="notifications-circle-outline"></ion-icon></div>
+                    <div id="ava1"><img class="object-fit-cover rounded-circle" src="./assets/avatar-1.jpg" alt=""></div>
+                    <div class="dropdown">
+                        <button class="menuButton d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ion-icon name="menu-outline"></ion-icon>
+                            
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item d-flex align-items-center justify-content-between gap-3" href="#"><img class="h-20 object-fit-cover rounded-circle" src="./assets/avatar-1.jpg" alt=""><div class="d-flex flex-column justify-content-center align-items-start"><span><strong>Annette Black</strong></span> <span class="text-muted">annette@geeksui.com</span></div></a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#"><div class="d-flex align-items-center justify-content-start gap-3"><ion-icon name="person-outline"></ion-icon> <span>Profile</span></div></a></li>
+                          <li><a class="dropdown-item" href="#"><div class="d-flex align-items-center justify-content-start gap-3"><ion-icon name="star-outline"></ion-icon> <span>Subscription</span></div></a></li>
+                          <li><a class="dropdown-item" href="#"><div class="d-flex align-items-center justify-content-start gap-3"><ion-icon name="settings-outline"></ion-icon> <span>Settings</span></div></a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#"><div class="d-flex align-items-center justify-content-start gap-3"><ion-icon name="power-outline"></ion-icon></ion-icon> <span>Sign Off</span></div></a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
         
-            <div class="chart">
-                <div class="products"> 
-                    <h5 class="imgtitle"> I PHONE 15 </h5>
-                    <img class="img" src="https://cdn.ithinkdiff.com/wp-content/uploads/2023/02/iPhone-15-Pro-red-color.jpg" alt="iphone 15">
-                    <p class="imgprice"> 1249 €</p>
-                    <p class="imgdescrip"> Apple iPhone 15 (512 GB) - Azzurro</p>
-                    <button class="button"> <a class="linkimg" href="https://www.amazon.it/Apple-iPhone-15-128-GB/dp/B0CHWV5HTM/ref=sr_1_2?adgrpid=1236951571421243&dib=eyJ2IjoiMSJ9.ZvsfLNdhySjrIp70SZkYO3NqqLc_k0-jsvvyWqEiq4Q7q47H-FxjGD2Kk3SfawAfoZJloQMiSGSnP3fCULUeFeWPx9qlUsYK9Xl5bsxftjUuKqVxzpwNP7jm8ZLYZg6gOV2-ERxyZPbVB7r1SMUaX2e8rJb_jyfySaPvqd0-gfMwNIPZmglaZ-6I_NiujY3pgSDQicKhV92Wj-cCcSSvjn3dMbjDJiQ6Ik_cNAY-v-gS1cRnptmVExAHWazLqS3p1Q_1nUOvpwQfi6ue-tNDsdO88kss6JwWN1Ln5mXXDDo.Me-3BP0IH27K-K9g-ddz0tFXzRfXEA8mCOWNwYykBy0&dib_tag=se&hvadid=77309603565851&hvbmt=be&hvdev=c&hvlocphy=1832&hvnetw=o&hvqmt=e&hvtargid=kwd-77309722081769%3Aloc-93&hydadcr=17013_2168311&keywords=iphone+15+amazon&qid=1717107131&sr=8-2&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35"> Clicca qui</a>
-                    </button>
-                        
-                
+    </nav>
+    <main class="container-fluid">
+        <div class="row first">
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-end">
+                <div class="welcome d-flex flex-column align-items-start justify-content-center">
+                    <h1>Welcome Web Students!</h1>
+                <p>Hand-picked Instructors and expertly crafted<br>courses, designed for the modern students and <br>entrepreneur. </p>
+                <div class="d-flex align-items-center justify-content-center gap-1">
+                    <button class="btn">Browse Courses</button>
+                    <button>Are you Instructor</button>
                 </div>
-                <div class="products"> 
-                    <h5 class="imgtitle"> XIAOMI 14 </h5>
-                    <img class="img" src="Xiaomi-14-Ultra-Brushed-TPU-Case-Carbon-Fiber-RedNone-05032024-01-p.jpg" alt="xiaomi 14">
-                    <p class="imgprice"> 999 €</p>
-                    <p class="imgdescrip"> Xiaomi Smartphone 14,Snapdragon 8 Gen3 3.3GHz, 120Hz 6.36'' AMOLED Display,90W Hyper Charge, 4610mAh Batteria,12GB RAM+512GB ROM,Green</p>
-                    <button class="button"> <a class="linkimg" href="https://www.amazon.it/Xiaomi-Smartphone-Snapdragon-Display-Batteria/dp/B0CR9Z1Y7P?ref_=ast_sto_dp&th=1&psc=1"> Clicca qui</a>
-                    </button>
-                </div>
-                <div class="products"> 
-                    <h5 class="imgtitle">SAMSUNG S24</h5>
-                    <img class="img" src="ASSET_MMS_108091618.webp" alt="samsung s24">
-                    <p class="imgprice"> 679,99 € </p>
-                    <p class="imgdescrip">SAMSUNG Galaxy S24 Smartphone AI, Display 6.2'' FHD+ Dynamic AMOLED 2X, Fotocamera 50MP, RAM 8GB, 256GB, 4.000 mAh, Amber Yellow</p>
-                    <button class="button"> <a class="linkimg" href="https://www.amazon.it/Samsung-GALAXY-S24-256-BLACK/dp/B0CSTC2RDW/ref=sr_1_2?dib=eyJ2IjoiMSJ9.YRg2fZxAd77gOUIct1Kazyhln4McyFeSU4hkXNuKCT1hmrMYbrCp3ycCHQrpbKqrtUfU9MKYPYy22_8AkN3BFaSu0h9qQ_fG8KSzs1lMAiypthPiTzvavI5a5apjuoOINx5rZYqICpNFtg09XDPN3XRBVKmDc0Sznf04U8go4xnjcp8H4zjL8BfB43auQzBRMESxE5bt2RQyri8h_1KIG6LswVv2vDgtbdI4hOWflwJYjTPFd9zCxUCQjb7eUgieL5BwizKVCqKNVowjUjQNIrI61Zi6C7ZZkDUNgWseq7c._Pz7MOapYt93-7KmcOdAxkIMkw7ZgcC6d1Eny7q5fxk&dib_tag=se&keywords=samsung+s24&qid=1717421813&sr=8-2&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35"> Clicca qui</a>
-                    </button>
-                </div>
-                <div class="products"> 
-                    <h5 class="imgtitle">HUAWEI P60 PRO</h5>
-                    <img class="img" src="huawei p60.jpg" alt="huawei p60 pro">
-                    <p class="imgprice"> 1199 €</p>
-                    <p class="imgdescrip"> HUAWEI P60 Pro Smartphone, 8+256GB, Teleobiettivo XMAGE Ultra Lighting, Kunlun Glass, Display AMOLED LTPO 6,67'', Frequenza aggiornamento 1 120Hz, SuperCharge Turbo 88W, 4815mAh, Rococo Pearl + AP52</p>
-                    <button class="button"> <a class="linkimg" href="https://www.amazon.it/HUAWEI-Smartphone-Teleobiettivo-aggiornamento-SuperCharge/dp/B0C46DRP1M"> Clicca qui</a>
-                    </button>
-                </div>
-                <div class="products"> 
-                    <h5 class="imgtitle"> MOTOROLA RAZR 40</h5>
-                    <img class="img" src="Group-KV_Exclusive-MO.webp" alt="motorola razr 40">
-                    <p class="imgprice"> 669 €</p>
-                    <p class="imgdescrip"> Motorola RAZR 40 Ultra (display flessibile 6.9" pOLED 165Hz, display esterno full screen 3.6" pOLED, 5G, Selfie Cam 32 MP, 8/256 GB, 3800 mAH, caricatore 33W, Dual SIM, Android 13), Infinite Black</p>
-
-                    <button class="button"> <a class="linkimg" href="https://www.amazon.it/Motorola-40-flessibile-caricatore-Infinite/dp/B0C4VDKD43"> Clicca qui</a>
-                    </button>                </div>
-                    <div class="recensione">
-                        <p>Lascia qui la tua recensione</p>
-                        <input type="text"></div>
-                 </div> 
+            </div>
            
-    </header>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center justify-content-start">
+                    <img class="hero-img object-fit-cover" src="./assets/hero-img.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+        <div class="row secondBar d-flex justify-content-center ">
+            <div class="col-12 d-flex align-items-center justify-content-center gap-5">
+                <div class="row">
+                <div class="first-icon col-12 col-md-4 d-flex align-items-center justify-content-center gap-2">
+                    <div class="barIcons d-flex justify-content-center align-items-center p-2">
+                        <ion-icon name="videocam-outline"></ion-icon>
+                    </div>
+                    <div class="d-flex flex-column align-items-start text-center p-3">
+                        <h5>30,000 online courses</h5>
+                        <span>Enjoy a variety of fresh topics</span>
+                    </div>
+                </div>
+                <div class="second-icon col-12 col-md-4 d-flex align-items-center justify-content-center gap-2">
+                    <div class="barIcons d-flex justify-content-center align-items-center p-2">
+                        <ion-icon name="videocam-outline"></ion-icon>
+                    </div>
+                    <div class="d-flex flex-column align-items-start text-center p-3">
+                        <h5>30,000 online courses</h5>
+                        <span>Enjoy a variety of fresh topics</span>
+                    </div>
+                </div>
+                <div class="third-icon col-12 col-md-4 d-flex align-items-center justify-content-center gap-2">
+                    <div class="barIcons d-flex justify-content-center align-items-center p-2">
+                        <ion-icon name="videocam-outline"></ion-icon>
+                    </div>
+                    <div class="d-flex flex-column align-items-start text-center p-3">
+                        <h5>30,000 online courses</h5>
+                        <span>Enjoy a variety of fresh topics</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        
+        <section class="mainSection container-fluid pt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h3 class="d-flex justify-content-start mb-5"><strong>Recommended to you </strong> </h3>
+            <div class="row card-container gx-2 gy-2 d-flex">
+                <div class="col-6 col-md-3 ">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="GraphQL">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>GraphQL: Introduction to GraphQL for Beginners</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>2h 40m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Advance</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>2.5</span>
+                                </div>
+                                <span class="text-muted"><small>(1,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$500</strong></span>
+                                <span class="text-muted"><small><del>$600</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                <span class="text-muted">Brooklyn Simmons</span>
+                            </div>
+                          <div class="saving"><ion-icon class="text-muted" name="bookmark-outline"></ion-icon></div> 
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-javascript.jpg" class="card-img-top object-fit-cover" alt="JavaScript">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>A Complete Beginner's <br> Guide to JavaScript</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>4h 10m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Advance</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>3.5</span>
+                                </div>
+                                <span class="text-muted"><small>(7,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$700</strong></span>
+                                <span class="text-muted"><small><del>$850</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-1.jpg" alt="Jenny Wilson">
+                                <span class="text-muted">Jenny Wilson</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-node.jpg" class="card-img-top object-fit-cover" alt="Node.js">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>Beginning Node.js, Express & MongoDB Development</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>2h 00m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Intermediate</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>4.0</span>
+                                </div>
+                                <span class="text-muted"><small>(15,700)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$800</strong></span>
+                                <span class="text-muted"><small><del>$950</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-3.jpg" alt="Sina Ray">
+                                <span class="text-muted">Sina Ray</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-laravel.jpg" class="card-img-top object-fit-cover" alt="Laravel">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>Laravel: The Ultimate Beginner's Guide to Learn</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>1h 00m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Beginner</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>4.5</span>
+                                </div>
+                                <span class="text-muted"><small>(2,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$170</strong></span>
+                                <span class="text-muted"><small><del>$220</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-2.jpg" alt="Sobo Rikhan">
+                                <span class="text-muted">Sobo Rikhan</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <section class="mainSection container-fluid pt-5">
+            <div class="row  d-flex justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h3 class="d-flex justify-content-start mb-5"><strong>Recommended to you </strong> </h3>
+            <div class="row card-container gx-2 gy-2 d-flex">
+                <div class="col-6 col-md-3 ">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="GraphQL">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>GraphQL: Introduction to GraphQL for Beginners</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>2h 40m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Advance</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>2.5</span>
+                                </div>
+                                <span class="text-muted"><small>(1,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$500</strong></span>
+                                <span class="text-muted"><small><del>$600</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                <span class="text-muted">Brooklyn Simmons</span>
+                            </div>
+                            <ion-icon class="text-muted saving" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-javascript.jpg" class="card-img-top object-fit-cover" alt="JavaScript">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>A Complete Beginner's <br> Guide to JavaScript</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>4h 10m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Advance</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>3.5</span>
+                                </div>
+                                <span class="text-muted"><small>(7,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$700</strong></span>
+                                <span class="text-muted"><small><del>$850</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-1.jpg" alt="Jenny Wilson">
+                                <span class="text-muted">Jenny Wilson</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-node.jpg" class="card-img-top object-fit-cover" alt="Node.js">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>Beginning Node.js, Express & MongoDB Development</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>2h 00m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Intermediate</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>4.0</span>
+                                </div>
+                                <span class="text-muted"><small>(15,700)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$800</strong></span>
+                                <span class="text-muted"><small><del>$950</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-3.jpg" alt="Sina Ray">
+                                <span class="text-muted">Sina Ray</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-laravel.jpg" class="card-img-top object-fit-cover" alt="Laravel">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>Laravel: The Ultimate Beginner's Guide to Learn</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>1h 00m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Beginner</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>4.5</span>
+                                </div>
+                                <span class="text-muted"><small>(2,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$170</strong></span>
+                                <span class="text-muted"><small><del>$220</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-2.jpg" alt="Sobo Rikhan">
+                                <span class="text-muted">Sobo Rikhan</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section class="mainSection container-fluid pt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h3 class="d-flex justify-content-start mb-5"><strong>Recommended to you </strong> </h3>
+            <div class="row card-container gx-2 gy-2 d-flex">
+                <div class="col-6 col-md-3 ">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-graphql.jpg" class="card-img-top object-fit-cover" alt="GraphQL">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>GraphQL: Introduction to GraphQL for Beginners</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>2h 40m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Advance</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>2.5</span>
+                                </div>
+                                <span class="text-muted"><small>(1,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$500</strong></span>
+                                <span class="text-muted"><small><del>$600</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-5.jpg" alt="Brooklyn Simmons">
+                                <span class="text-muted">Brooklyn Simmons</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-javascript.jpg" class="card-img-top object-fit-cover" alt="JavaScript">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>A Complete Beginner's <br> Guide to JavaScript</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>4h 10m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Advance</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>3.5</span>
+                                </div>
+                                <span class="text-muted"><small>(7,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$700</strong></span>
+                                <span class="text-muted"><small><del>$850</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-1.jpg" alt="Jenny Wilson">
+                                <span class="text-muted">Jenny Wilson</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-node.jpg" class="card-img-top object-fit-cover" alt="Node.js">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>Beginning Node.js, Express & MongoDB Development</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>2h 00m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Intermediate</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>4.0</span>
+                                </div>
+                                <span class="text-muted"><small>(15,700)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$800</strong></span>
+                                <span class="text-muted"><small><del>$950</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-3.jpg" alt="Sina Ray">
+                                <span class="text-muted">Sina Ray</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="card p-0 h-100">
+                        <img src="./assets/course-laravel.jpg" class="card-img-top object-fit-cover" alt="Laravel">
+                        <div class="card-body d-flex flex-column align-items-start justify-content-center gap-1">
+                            <p class="card-text"><strong>Laravel: The Ultimate Beginner's Guide to Learn</strong></p>
+                            <div class="cardIcons d-flex align-items-center justify-content-center text-muted gap-2">
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span><small>1h 00m</small></span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="stats-chart-outline"></ion-icon>
+                                    <span><small>Beginner</small></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <div class="stars d-flex align-items-center justify-content-center gap-1">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>4.5</span>
+                                </div>
+                                <span class="text-muted"><small>(2,500)</small></span>
+                            </div>
+                            <div class="d-flex justify-content-center gap-1">
+                                <span><strong>$170</strong></span>
+                                <span class="text-muted"><small><del>$220</del></small></span>
+                            </div>
+                        </div>
+                        <div class="cardDivider"></div>
+                        <div class="d-flex align-items-center justify-content-between p-2">
+                            <div class="d-flex align-items-center justify-content-center gap-1">
+                                <img class="cardAvatar" src="./assets/avatar-2.jpg" alt="Sobo Rikhan">
+                                <span class="text-muted">Sobo Rikhan</span>
+                            </div>
+                            <ion-icon class="text-muted" name="bookmark-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+       
+        <!-- <section class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Recommended</h2>
+                </div>
+            </div>
+            <div id="cardsContainer" class="row"></div>
+            
+        </section>
+    -->        
+    </main>
     
-    <footer> 
-        <h3>SMART ISLAND</h3>
-        <p id="address">Via Enrico Minozzi 82, Casolla (Ce)</p>
-    </footer>
-    
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+  </body>
 </body>
 </html>
